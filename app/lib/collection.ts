@@ -1,3 +1,5 @@
+import dinosaurs from '@/data/dinosaurs.json'
+
 export interface CollectionState {
   collected: string[]
 }
@@ -37,6 +39,6 @@ export const getCollectionProgress = (): { collected: number; total: number } =>
   const collection = getCollection()
   return {
     collected: collection.collected.length,
-    total: 7 // Total number of dinosaurs
+    total: dinosaurs.length
   }
 }

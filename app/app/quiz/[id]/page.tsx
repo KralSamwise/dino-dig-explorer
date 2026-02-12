@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
+import Link from 'next/link'
 import dinosaurs from '@/data/dinosaurs.json'
 import { addToCollection, isCollected } from '@/lib/collection'
 
@@ -14,7 +15,7 @@ export default function QuizPage() {
   const dino = dinosaurs.find(d => d.id === dinoId)
   
   const [currentQuestion, setCurrentQuestion] = useState(0)
-  const [score, setScore] = useState(0)
+  const [correctCount, setCorrectCount] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
   const [showResult, setShowResult] = useState(false)
   const [quizComplete, setQuizComplete] = useState(false)
@@ -43,12 +44,13 @@ export default function QuizPage() {
   const isCorrect = selectedAnswer === question.correct
 
   const handleAnswer = (answerIndex: number) => {
+    if (showResult) return
     setSelectedAnswer(answerIndex)
     setShowResult(true)
 
-    if (answerIndex === question.correct) {
-      setScore(score + 1)
-    }
+    const wasCorrect = answerIndex === question.correct
+    const newCorrectCount = wasCorrect ? correctCount + 1 : correctCount
+    if (wasCorrect) setCorrectCount(newCorrectCount)
 
     setTimeout(() => {
       if (currentQuestion < dino.quiz.length - 1) {
@@ -57,16 +59,16 @@ export default function QuizPage() {
         setShowResult(false)
       } else {
         setQuizComplete(true)
-        if (score + (answerIndex === question.correct ? 1 : 0) >= 2) {
+        // Need at least 3/5 to collect
+        if (newCorrectCount >= 3) {
           addToCollection(dino.id)
         }
       }
-    }, 2000)
+    }, 2500)
   }
 
   if (quizComplete) {
-    const passed = score >= 2
-    const finalScore = score + (isCorrect ? 1 : 0)
+    const passed = correctCount >= 3
 
     return (
       <div className="min-h-screen flex items-center justify-center p-4">
@@ -83,7 +85,7 @@ export default function QuizPage() {
             {passed ? 'Amazing Job!' : 'Keep Learning!'}
           </h1>
           <p className="text-3xl mb-6">
-            You scored {finalScore} out of {dino.quiz.length}!
+            You scored {correctCount} out of {dino.quiz.length}!
           </p>
           
           {passed && !alreadyCollected && (
@@ -108,23 +110,28 @@ export default function QuizPage() {
 
           {!passed && (
             <p className="text-xl text-earth-600 mb-6">
-              Learn more about {dino.name} and try again! 💪
+              You need 3 correct answers to hatch {dino.name}. Learn more and try again! 💪
             </p>
           )}
 
           <div className="flex gap-4 justify-center flex-wrap">
+            <Link href="/">
+              <button className="btn-secondary bg-gradient-to-r from-gray-400 to-gray-500">
+                🏠 Home
+              </button>
+            </Link>
             <button
               onClick={() => router.push(`/explore/${dino.id}`)}
               className="btn-secondary"
             >
-              Learn More
+              📖 Learn More
             </button>
             {passed && (
               <button
                 onClick={() => router.push('/collection')}
                 className="btn-primary"
               >
-                View Collection
+                🥚 View Collection
               </button>
             )}
             {!passed && (
@@ -132,7 +139,7 @@ export default function QuizPage() {
                 onClick={() => window.location.reload()}
                 className="btn-primary"
               >
-                Try Again
+                🔄 Try Again
               </button>
             )}
           </div>
@@ -160,8 +167,21 @@ export default function QuizPage() {
               Question {currentQuestion + 1}/{dino.quiz.length}
             </span>
             <span className="text-2xl font-bold">
-              Score: {score} 🌟
+              Score: {correctCount} 🌟
             </span>
+          </div>
+          {/* Progress dots */}
+          <div className="flex justify-center gap-2 mt-3">
+            {dino.quiz.map((_, i) => (
+              <div
+                key={i}
+                className={`w-4 h-4 rounded-full transition-all ${
+                  i < currentQuestion ? 'bg-jungle-500' :
+                  i === currentQuestion ? 'bg-amber-500 scale-125' :
+                  'bg-gray-300'
+                }`}
+              />
+            ))}
           </div>
         </div>
 
@@ -185,9 +205,11 @@ export default function QuizPage() {
 
                 if (showResult) {
                   if (index === question.correct) {
-                    bgColor = 'bg-green-100 border-green-500'
+                    bgColor = 'bg-green-100'
+                    borderColor = 'border-green-500'
                   } else if (index === selectedAnswer) {
-                    bgColor = 'bg-red-100 border-red-500'
+                    bgColor = 'bg-red-100'
+                    borderColor = 'border-red-500'
                   }
                 }
 
@@ -196,7 +218,7 @@ export default function QuizPage() {
                     key={index}
                     whileHover={{ scale: showResult ? 1 : 1.02 }}
                     whileTap={{ scale: showResult ? 1 : 0.98 }}
-                    onClick={() => !showResult && handleAnswer(index)}
+                    onClick={() => handleAnswer(index)}
                     disabled={showResult}
                     className={`w-full p-6 rounded-2xl border-4 ${borderColor} ${bgColor} text-left text-xl font-bold transition-all shadow-md`}
                   >
@@ -227,10 +249,13 @@ export default function QuizPage() {
               className="text-center"
             >
               <div className="text-8xl mb-4">
-                {isCorrect ? '🎉' : '💪'}
+                {isCorrect ? '🎉' : '🤔'}
               </div>
-              <p className="text-3xl font-bold">
-                {isCorrect ? 'Awesome!' : 'Keep trying!'}
+              <p className="text-3xl font-bold mb-2">
+                {isCorrect ? 'Awesome!' : 'Not quite!'}
+              </p>
+              <p className="text-lg text-earth-600">
+                The answer is: <strong>{question.options[question.correct]}</strong>
               </p>
             </motion.div>
           )}

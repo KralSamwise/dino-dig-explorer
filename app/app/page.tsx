@@ -52,7 +52,7 @@ export default function Home() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.5 }}
         >
-          <Link href="/explore">
+          <Link href="/quiz">
             <div className="btn-primary text-center cursor-pointer h-32 flex flex-col items-center justify-center space-y-2 bg-gradient-to-r from-amber-500 to-orange-600">
               <span className="text-5xl">🎯</span>
               <span>Quiz Time!</span>
