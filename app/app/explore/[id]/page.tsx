@@ -1,9 +1,11 @@
 'use client'
 
 import { useParams, useRouter } from 'next/navigation'
+import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import dynamic from 'next/dynamic'
 import dinosaurs from '@/data/dinosaurs.json'
+import { sounds } from '@/lib/sounds'
 
 // Dynamically import 3D component to avoid SSR issues
 const DinoModel = dynamic(() => import('@/components/DinoModel'), {
@@ -21,6 +23,12 @@ export default function DinoDetailPage() {
   const dinoId = params.id as string
 
   const dino = dinosaurs.find(d => d.id === dinoId)
+
+  useEffect(() => {
+    if (dino) {
+      setTimeout(() => sounds.roar(), 500)
+    }
+  }, [dino])
 
   if (!dino) {
     return (

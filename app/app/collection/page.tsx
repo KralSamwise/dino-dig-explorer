@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import dinosaurs from '@/data/dinosaurs.json'
 import { getCollection, getCollectionProgress } from '@/lib/collection'
+import { sounds } from '@/lib/sounds'
 
 export default function CollectionPage() {
   const [collection, setCollection] = useState<string[]>([])
@@ -83,6 +84,35 @@ export default function CollectionPage() {
             </motion.p>
           )}
         </motion.div>
+
+        {/* Share Button */}
+        {progress.collected > 0 && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="text-center mb-8"
+          >
+            <button
+              onClick={() => {
+                sounds.click()
+                const collectedNames = dinosaurs
+                  .filter(d => collection.includes(d.id))
+                  .map(d => `${d.emoji} ${d.name}`)
+                  .join('\n')
+                const text = `🦖 My Dino Dig Collection!\n\n${collectedNames}\n\n${progress.collected}/${progress.total} dinosaurs collected!\n\nPlay at: https://app-two-gray-53.vercel.app`
+                if (navigator.share) {
+                  navigator.share({ title: 'My Dino Collection!', text })
+                } else {
+                  navigator.clipboard.writeText(text)
+                  alert('Copied to clipboard! 📋')
+                }
+              }}
+              className="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold rounded-2xl shadow-lg hover:scale-105 transition-all text-lg"
+            >
+              📤 Share My Collection!
+            </button>
+          </motion.div>
+        )}
 
         {/* Collection Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

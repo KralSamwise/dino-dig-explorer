@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import dinosaurs from '@/data/dinosaurs.json'
 import DinoCard from '@/components/DinoCard'
+import { sounds } from '@/lib/sounds'
 
 type Era = 'All' | 'Triassic' | 'Jurassic' | 'Cretaceous'
 type Diet = 'All' | 'Carnivore' | 'Herbivore'
@@ -95,7 +96,7 @@ export default function ExplorePage() {
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: index * 0.1, duration: 0.3 }}
             >
-              <Link href={`/explore/${dino.id}`}>
+              <Link href={`/explore/${dino.id}`} onClick={() => sounds.click()}>
                 <DinoCard dino={dino} />
               </Link>
             </motion.div>
