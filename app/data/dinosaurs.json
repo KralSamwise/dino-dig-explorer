@@ -32,6 +32,16 @@
         "question": "How long were T-Rex teeth?",
         "options": ["As big as bananas", "As small as peas", "As big as apples", "As big as watermelons"],
         "correct": 0
+      },
+      {
+        "question": "Where did T-Rex live?",
+        "options": ["In the ocean", "In North America", "In Antarctica", "In Australia"],
+        "correct": 1
+      },
+      {
+        "question": "How fast could T-Rex run?",
+        "options": ["5 mph", "25 mph", "50 mph", "100 mph"],
+        "correct": 1
       }
     ]
   },
@@ -68,6 +78,16 @@
         "question": "What protected its neck?",
         "options": ["Spikes", "Armor", "A frill", "Scales"],
         "correct": 2
+      },
+      {
+        "question": "How many teeth could Triceratops have?",
+        "options": ["50 teeth", "200 teeth", "800 teeth", "No teeth"],
+        "correct": 2
+      },
+      {
+        "question": "Did Triceratops live alone?",
+        "options": ["Yes, always alone", "In herds like elephants", "Only in pairs", "Underground"],
+        "correct": 1
       }
     ]
   },
@@ -104,6 +124,16 @@
         "question": "What did Stegosaurus eat?",
         "options": ["Meat", "Fish", "Plants", "Eggs"],
         "correct": 2
+      },
+      {
+        "question": "How big was Stegosaurus' brain?",
+        "options": ["Size of a basketball", "Size of a walnut", "Size of a watermelon", "Size of a car"],
+        "correct": 1
+      },
+      {
+        "question": "When did Stegosaurus live?",
+        "options": ["Triassic Period", "Jurassic Period", "Cretaceous Period", "Ice Age"],
+        "correct": 1
       }
     ]
   },
@@ -140,6 +170,16 @@
         "question": "What covered Velociraptor's body?",
         "options": ["Scales", "Feathers", "Fur", "Armor"],
         "correct": 1
+      },
+      {
+        "question": "How big was a real Velociraptor?",
+        "options": ["As big as a car", "As big as a turkey", "As big as T-Rex", "As big as a mouse"],
+        "correct": 1
+      },
+      {
+        "question": "How fast could Velociraptor run?",
+        "options": ["10 mph", "25 mph", "40 mph", "60 mph"],
+        "correct": 2
       }
     ]
   },
@@ -176,6 +216,16 @@
         "question": "Which legs were longer?",
         "options": ["Front legs", "Back legs", "All same", "No legs"],
         "correct": 0
+      },
+      {
+        "question": "How much did Brachiosaurus eat each day?",
+        "options": ["10 pounds", "100 pounds", "400 pounds", "1,000 pounds"],
+        "correct": 2
+      },
+      {
+        "question": "What does Brachiosaurus mean?",
+        "options": ["Long Neck", "Arm Lizard", "Tall Tree Eater", "Giant Beast"],
+        "correct": 1
       }
     ]
   },
@@ -213,6 +263,16 @@
         "question": "Was Pteranodon a dinosaur?",
         "options": ["Yes", "No, a flying reptile", "Yes, a bird", "No, a fish"],
         "correct": 1
+      },
+      {
+        "question": "Did Pteranodon have teeth?",
+        "options": ["Yes, lots of teeth", "No teeth at all", "Only baby teeth", "Just two teeth"],
+        "correct": 1
+      },
+      {
+        "question": "How wide were Pteranodon's wings?",
+        "options": ["3 feet", "10 feet", "23 feet", "50 feet"],
+        "correct": 2
       }
     ]
   },
@@ -248,6 +308,16 @@
       {
         "question": "What did Parasaurolophus eat?",
         "options": ["Meat", "Plants", "Fish", "Berries"],
+        "correct": 1
+      },
+      {
+        "question": "How did Parasaurolophus walk?",
+        "options": ["Only on two legs", "Only on four legs", "On two OR four legs", "It hopped"],
+        "correct": 2
+      },
+      {
+        "question": "How long was the crest on its head?",
+        "options": ["6 inches", "6 feet", "20 feet", "1 foot"],
         "correct": 1
       }
     ]

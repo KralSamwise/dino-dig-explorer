@@ -59,12 +59,12 @@ export default function QuizPage() {
         setShowResult(false)
       } else {
         setQuizComplete(true)
-        // Need at least 3/5 to collect
+        // Need at least 3 correct to collect
         if (newCorrectCount >= 3) {
           addToCollection(dino.id)
         }
       }
-    }, 2500)
+    }, 3500)
   }
 
   if (quizComplete) {

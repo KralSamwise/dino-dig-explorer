@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import dinosaurs from '@/data/dinosaurs.json'
+import DinoCard from '@/components/DinoCard'
 
 type Era = 'All' | 'Triassic' | 'Jurassic' | 'Cretaceous'
 type Diet = 'All' | 'Carnivore' | 'Herbivore'
@@ -95,38 +96,7 @@ export default function ExplorePage() {
               transition={{ delay: index * 0.1, duration: 0.3 }}
             >
               <Link href={`/explore/${dino.id}`}>
-                <div className="dino-card">
-                  {/* Image Placeholder */}
-                  <div 
-                    className="h-48 flex items-center justify-center text-8xl"
-                    style={{ backgroundColor: `${dino.color}20` }}
-                  >
-                    {dino.emoji}
-                  </div>
-                  
-                  {/* Info */}
-                  <div className="p-6">
-                    <h3 className="text-2xl font-black text-jungle-800 mb-2">
-                      {dino.name}
-                    </h3>
-                    
-                    <div className="flex gap-2 mb-3">
-                      <span className="px-3 py-1 bg-jungle-100 text-jungle-700 rounded-full text-sm font-bold">
-                        {dino.era}
-                      </span>
-                      <span 
-                        className="px-3 py-1 rounded-full text-sm font-bold text-white"
-                        style={{ backgroundColor: dino.color }}
-                      >
-                        {dino.diet}
-                      </span>
-                    </div>
-                    
-                    <p className="text-earth-600 text-lg">
-                      {dino.funFact}
-                    </p>
-                  </div>
-                </div>
+                <DinoCard dino={dino} />
               </Link>
             </motion.div>
           ))}
