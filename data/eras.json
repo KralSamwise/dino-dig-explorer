@@ -1,0 +1,130 @@
+{
+  "eras": [
+    {
+      "id": "triassic",
+      "name": "Triassic Period",
+      "pronunciation": "try-ASS-ick",
+      "dateRange": "252-201 million years ago",
+      "duration": "51 million years",
+      "color": "#C74B50",
+      "emoji": "🌋",
+      "description": "The Triassic was when dinosaurs first appeared! The world was just recovering from a huge disaster, and life was starting over.",
+      "climate": "Hot and dry, like a giant desert",
+      "temperature": "Very warm — no ice at the poles!",
+      "continents": "All the land was stuck together in one GIANT supercontinent called Pangaea (pan-JEE-uh). You could walk from one side of the world to the other!",
+      "ocean": "One massive ocean called Panthalassa surrounded all the land",
+      "plants": [
+        "Ferns everywhere",
+        "Cycads (plants that look like palm trees)",
+        "Conifers (early pine trees)",
+        "No flowers yet — flowers hadn't been invented!"
+      ],
+      "animals": [
+        "First small dinosaurs appeared",
+        "Lots of reptiles that looked like crocodiles",
+        "Early mammals (tiny and furry, like shrews)",
+        "Flying reptiles started to evolve",
+        "In the ocean: ichthyosaurs (dolphin-like reptiles)"
+      ],
+      "coolFacts": [
+        "The Triassic started after the worst extinction event ever — 96% of ocean life died out!",
+        "The first dinosaurs were small — only about the size of dogs!",
+        "It was SO hot that the middle of Pangaea was like a giant desert where almost nothing could live!",
+        "There were no polar ice caps — even the North and South Poles were warm!",
+        "The first mammals appeared, but they were tiny and lived in the shadows of bigger reptiles!"
+      ],
+      "endEvent": "The Triassic ended with volcanic eruptions that split Pangaea apart and killed off many species, making room for dinosaurs to take over!"
+    },
+    {
+      "id": "jurassic",
+      "name": "Jurassic Period",
+      "pronunciation": "jur-ASS-ick",
+      "dateRange": "201-145 million years ago",
+      "duration": "56 million years",
+      "color": "#4A7C59",
+      "emoji": "🦕",
+      "description": "The Jurassic was the golden age of dinosaurs! This is when dinosaurs got HUGE and ruled the world!",
+      "climate": "Warm and humid, like a giant rainforest",
+      "temperature": "Warm and wet — perfect for growing plants and dinosaurs!",
+      "continents": "Pangaea was breaking apart! North America and Africa started drifting away from each other.",
+      "ocean": "The Atlantic Ocean was just being born as continents split apart",
+      "plants": [
+        "Lush forests of ferns",
+        "Huge cycads and ginkgo trees",
+        "Giant conifer forests",
+        "Lots of moss and wet, swampy plants",
+        "Still no flowers!"
+      ],
+      "animals": [
+        "GIANT dinosaurs like Brachiosaurus",
+        "Stegosaurus with its cool plates",
+        "Allosaurus (a fierce predator)",
+        "First birds appeared (evolved from small dinosaurs!)",
+        "Pterosaurs ruled the skies",
+        "In the ocean: huge plesiosaurs and ichthyosaurs"
+      ],
+      "coolFacts": [
+        "This is when dinosaurs got HUGE — the biggest land animals ever walked the Earth!",
+        "The first birds appeared during the Jurassic — they evolved from small feathered dinosaurs!",
+        "Sea levels were super high, creating shallow tropical seas everywhere!",
+        "The world was so warm and wet that there were forests near the North and South Poles!",
+        "Archaeopteryx, the famous 'first bird,' lived during this time — it had feathers AND teeth!"
+      ],
+      "endEvent": "The Jurassic ended with changes in sea levels and climate, but dinosaurs kept thriving into the next period!"
+    },
+    {
+      "id": "cretaceous",
+      "name": "Cretaceous Period",
+      "pronunciation": "creh-TAY-shuss",
+      "dateRange": "145-66 million years ago",
+      "duration": "79 million years",
+      "color": "#8B7355",
+      "emoji": "🦖",
+      "description": "The Cretaceous was the last and longest age of dinosaurs! This is when T-Rex and Triceratops lived — and when flowers first appeared!",
+      "climate": "Warm with seasons — some areas had hot summers and mild winters",
+      "temperature": "Still very warm, but cooling down slowly over millions of years",
+      "continents": "The continents were getting closer to where they are today! The Atlantic Ocean was getting wider.",
+      "ocean": "Warm shallow seas covered large parts of the continents",
+      "plants": [
+        "FLOWERS appeared for the first time!",
+        "Flowering plants like magnolias",
+        "Oak and maple trees evolved",
+        "Lots of ferns still around",
+        "Modern-looking forests started to appear"
+      ],
+      "animals": [
+        "T-Rex — the king of predators!",
+        "Triceratops with three horns",
+        "Velociraptor (small but smart)",
+        "Parasaurolophus with its trumpet crest",
+        "HUGE pterosaurs with 40-foot wingspans!",
+        "In the ocean: mosasaurs (giant swimming lizards)"
+      ],
+      "coolFacts": [
+        "The first flowers bloomed during the Cretaceous — before this, there were NO flowers on Earth!",
+        "This is when many of the most famous dinosaurs lived — including T-Rex!",
+        "Ants and bees appeared because flowers needed them for pollination!",
+        "Some areas of North America were covered by a shallow sea right down the middle!",
+        "The largest flying animal ever lived in the Cretaceous — Quetzalcoatlus had a wingspan as wide as a small plane!"
+      ],
+      "endEvent": "A giant asteroid hit Earth 66 million years ago, causing tsunamis, earthquakes, and blocking out the sun. This killed all the dinosaurs (except birds) and ended the Age of Dinosaurs!"
+    }
+  ],
+  "timeline": {
+    "mesozoicEra": {
+      "name": "Mesozoic Era (The Age of Dinosaurs)",
+      "pronunciation": "mez-oh-ZOH-ick",
+      "dateRange": "252-66 million years ago",
+      "duration": "186 million years total",
+      "nickname": "The Age of Reptiles",
+      "description": "The Mesozoic Era is the whole time when dinosaurs ruled the Earth! It's divided into three periods: Triassic, Jurassic, and Cretaceous.",
+      "bigIdea": "Dinosaurs lived for 186 MILLION years — that's way longer than humans have been around (only about 300,000 years)!"
+    }
+  },
+  "comparisonFacts": [
+    "If you made a timeline where one year equals one million years, dinosaurs would rule for 186 years, but humans would only show up in the last few months!",
+    "T-Rex lived closer to YOUR time than to Stegosaurus' time! (T-Rex: 66 million years ago, Stegosaurus: 150 million years ago)",
+    "The Mesozoic Era lasted 3 times longer than the age of mammals has lasted so far!",
+    "More time passed between Stegosaurus and T-Rex than between T-Rex and YOU!"
+  ]
+}

@@ -1,0 +1,255 @@
+[
+  {
+    "id": "t-rex",
+    "name": "Tyrannosaurus Rex",
+    "pronunciation": "tye-RAN-oh-SAWR-us rex",
+    "era": "Cretaceous",
+    "diet": "Carnivore",
+    "length": "12 meters (40 feet)",
+    "height": "5.6 meters (18 feet)",
+    "weight": "8,000 kg (9 tons)",
+    "facts": [
+      "One of the largest meat-eating dinosaurs ever! 🦖",
+      "Had tiny arms but HUGE, powerful jaws 💪",
+      "Could bite with a force of 12,800 pounds!",
+      "Name means 'Tyrant Lizard King' 👑"
+    ],
+    "funFact": "T-Rex teeth were as big as bananas! 🍌",
+    "emoji": "🦖",
+    "color": "#DC2626",
+    "quiz": [
+      {
+        "question": "What does T-Rex stand for?",
+        "options": ["Tyrannosaurus Rex", "Terrible Rex", "Tiny Rex", "Thunder Rex"],
+        "correct": 0
+      },
+      {
+        "question": "What did T-Rex eat?",
+        "options": ["Plants", "Fish", "Meat", "Berries"],
+        "correct": 2
+      },
+      {
+        "question": "How long were T-Rex teeth?",
+        "options": ["As big as bananas", "As small as peas", "As big as apples", "As big as watermelons"],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "id": "triceratops",
+    "name": "Triceratops",
+    "pronunciation": "try-SAIR-uh-tops",
+    "era": "Cretaceous",
+    "diet": "Herbivore",
+    "length": "9 meters (30 feet)",
+    "height": "3 meters (10 feet)",
+    "weight": "6,000 kg (6.6 tons)",
+    "facts": [
+      "Had three big horns on its head! 🦏",
+      "Used its horns to defend against predators",
+      "Its frill protected its neck like a shield 🛡️",
+      "Name means 'Three-Horned Face'"
+    ],
+    "funFact": "Triceratops was like a rhino, but WAY bigger!",
+    "emoji": "🦏",
+    "color": "#EA580C",
+    "quiz": [
+      {
+        "question": "How many horns did Triceratops have?",
+        "options": ["One", "Two", "Three", "Four"],
+        "correct": 2
+      },
+      {
+        "question": "What did Triceratops eat?",
+        "options": ["Meat", "Plants", "Fish", "Insects"],
+        "correct": 1
+      },
+      {
+        "question": "What protected its neck?",
+        "options": ["Spikes", "Armor", "A frill", "Scales"],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "stegosaurus",
+    "name": "Stegosaurus",
+    "pronunciation": "STEG-oh-SAWR-us",
+    "era": "Jurassic",
+    "diet": "Herbivore",
+    "length": "9 meters (30 feet)",
+    "height": "4 meters (14 feet)",
+    "weight": "5,000 kg (5.5 tons)",
+    "facts": [
+      "Had huge bony plates along its back! 🦴",
+      "Four spikes on its tail for protection",
+      "Brain was only the size of a walnut 🥜",
+      "The plates may have helped control temperature"
+    ],
+    "funFact": "Stegosaurus means 'Roof Lizard' because of its plates!",
+    "emoji": "🦕",
+    "color": "#16A34A",
+    "quiz": [
+      {
+        "question": "What did Stegosaurus have on its back?",
+        "options": ["Feathers", "Bony plates", "Fur", "Wings"],
+        "correct": 1
+      },
+      {
+        "question": "How many spikes on its tail?",
+        "options": ["Two", "Four", "Six", "Eight"],
+        "correct": 1
+      },
+      {
+        "question": "What did Stegosaurus eat?",
+        "options": ["Meat", "Fish", "Plants", "Eggs"],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "velociraptor",
+    "name": "Velociraptor",
+    "pronunciation": "veh-LOSS-ih-RAP-tor",
+    "era": "Cretaceous",
+    "diet": "Carnivore",
+    "length": "2 meters (6.5 feet)",
+    "height": "0.5 meters (1.6 feet)",
+    "weight": "15 kg (33 pounds)",
+    "facts": [
+      "Super fast and smart hunter! 🏃",
+      "Had a big curved claw on each foot",
+      "Probably had feathers! 🪶",
+      "Hunted in packs like wolves"
+    ],
+    "funFact": "Velociraptor was about the size of a turkey! 🦃",
+    "emoji": "🦅",
+    "color": "#7C3AED",
+    "quiz": [
+      {
+        "question": "What special weapon did Velociraptor have?",
+        "options": ["Sharp teeth", "Big claw on foot", "Long tail", "Horn"],
+        "correct": 1
+      },
+      {
+        "question": "Did Velociraptors hunt alone?",
+        "options": ["Yes, always alone", "No, in packs", "Only at night", "Only in water"],
+        "correct": 1
+      },
+      {
+        "question": "What covered Velociraptor's body?",
+        "options": ["Scales", "Feathers", "Fur", "Armor"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "brachiosaurus",
+    "name": "Brachiosaurus",
+    "pronunciation": "BRACK-ee-oh-SAWR-us",
+    "era": "Jurassic",
+    "diet": "Herbivore",
+    "length": "25 meters (82 feet)",
+    "height": "13 meters (43 feet)",
+    "weight": "56,000 kg (62 tons)",
+    "facts": [
+      "One of the TALLEST dinosaurs ever! 🦒",
+      "Could eat leaves from very tall trees",
+      "Its front legs were longer than back legs",
+      "Weighed as much as 12 elephants! 🐘"
+    ],
+    "funFact": "Brachiosaurus could peek over a 4-story building!",
+    "emoji": "🦕",
+    "color": "#0891B2",
+    "quiz": [
+      {
+        "question": "What made Brachiosaurus special?",
+        "options": ["Very short", "Very tall", "Very fast", "Very small"],
+        "correct": 1
+      },
+      {
+        "question": "What did Brachiosaurus eat?",
+        "options": ["Meat", "Leaves from tall trees", "Fish", "Grass"],
+        "correct": 1
+      },
+      {
+        "question": "Which legs were longer?",
+        "options": ["Front legs", "Back legs", "All same", "No legs"],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "id": "pteranodon",
+    "name": "Pteranodon",
+    "pronunciation": "teh-RAN-oh-don",
+    "era": "Cretaceous",
+    "diet": "Carnivore",
+    "length": "1.8 meters (6 feet)",
+    "height": "1 meter (3 feet)",
+    "wingspan": "7 meters (23 feet)",
+    "weight": "25 kg (55 pounds)",
+    "facts": [
+      "Could fly through the sky! ✈️",
+      "Not actually a dinosaur - a flying reptile!",
+      "Had a huge crest on its head",
+      "Ate fish from the ocean 🐟"
+    ],
+    "funFact": "Pteranodon's wingspan was as wide as a small airplane!",
+    "emoji": "🦅",
+    "color": "#2563EB",
+    "quiz": [
+      {
+        "question": "Could Pteranodon fly?",
+        "options": ["Yes!", "No", "Only glide", "Only swim"],
+        "correct": 0
+      },
+      {
+        "question": "What did Pteranodon eat?",
+        "options": ["Plants", "Fish", "Insects", "Eggs"],
+        "correct": 1
+      },
+      {
+        "question": "Was Pteranodon a dinosaur?",
+        "options": ["Yes", "No, a flying reptile", "Yes, a bird", "No, a fish"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "parasaurolophus",
+    "name": "Parasaurolophus",
+    "pronunciation": "PAIR-uh-saw-ROL-uh-fus",
+    "era": "Cretaceous",
+    "diet": "Herbivore",
+    "length": "10 meters (33 feet)",
+    "height": "5 meters (16 feet)",
+    "weight": "2,500 kg (2.8 tons)",
+    "facts": [
+      "Had a long, curved crest on its head! 📯",
+      "Could make loud honking sounds",
+      "The crest was like a built-in trumpet! 🎺",
+      "Walked on two legs or four legs"
+    ],
+    "funFact": "Parasaurolophus could communicate with its friends using its crest!",
+    "emoji": "🦕",
+    "color": "#DB2777",
+    "quiz": [
+      {
+        "question": "What was special about Parasaurolophus?",
+        "options": ["Long tail", "Long curved crest", "Big teeth", "Sharp claws"],
+        "correct": 1
+      },
+      {
+        "question": "What could it do with its crest?",
+        "options": ["Fly", "Dig", "Make sounds", "Fight"],
+        "correct": 2
+      },
+      {
+        "question": "What did Parasaurolophus eat?",
+        "options": ["Meat", "Plants", "Fish", "Berries"],
+        "correct": 1
+      }
+    ]
+  }
+]
